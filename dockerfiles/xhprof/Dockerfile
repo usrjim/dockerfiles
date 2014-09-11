@@ -1,11 +1,7 @@
-FROM debian:jessie
+FROM usrjim
 MAINTAINER Jim Cheung <usr.jim@gmail.com>
 
-RUN echo "Asia/Hong_Kong" > /etc/timezone
-RUN dpkg-reconfigure -f noninteractive tzdata
-
-RUN apt-get update && \
-    apt-get install -y vim-tiny git php5-cli php5-dev \
+RUN apt-get install -y git php5-cli php5-dev \
         php5-mcrypt php5-xdebug php-invoker php5-mongo php5-curl \
         php5-mysql php5-memcached php5-gd
 
