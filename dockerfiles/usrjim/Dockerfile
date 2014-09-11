@@ -7,4 +7,3 @@ RUN echo "Asia/Hong_Kong" > /etc/timezone && \
 RUN apt-get update && \
     apt-get install -y vim-tiny
 
-CMD ["bash"]
