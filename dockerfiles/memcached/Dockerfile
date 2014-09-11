@@ -1,11 +1,7 @@
-FROM debian:jessie
+FROM usrjim
 MAINTAINER Jim Cheung <usr.jim@gmail.com>
 
-RUN apt-get update
 RUN apt-get install -y memcached
-
-RUN echo "Asia/Hong_Kong" > /etc/timezone
-RUN dpkg-reconfigure -f noninteractive tzdata
 
 EXPOSE 11211
 

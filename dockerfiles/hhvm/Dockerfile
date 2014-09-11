@@ -1,11 +1,7 @@
-FROM debian:jessie
+FROM usrjim
 MAINTAINER Jim Cheung <usr.jim@gmail.com>
 
-RUN echo "Asia/Hong_Kong" > /etc/timezone
-RUN dpkg-reconfigure -f noninteractive tzdata
-
-RUN apt-get update
-RUN apt-get install -y vim-tiny wget nginx
+RUN apt-get install -y wget nginx
 
 RUN wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | apt-key add -
 RUN echo deb http://dl.hhvm.com/debian jessie main | tee /etc/apt/sources.list.d/hhvm.list

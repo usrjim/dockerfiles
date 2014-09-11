@@ -1,11 +1,7 @@
-FROM debian:jessie
+FROM usrjim
 MAINTAINER Jim Cheung <usr.jim@gmail.com>
 
-RUN echo "Asia/Hong_Kong" > /etc/timezone
-RUN dpkg-reconfigure -f noninteractive tzdata
-
-RUN apt-get update && \
-    apt-get install -y vim-tiny mongodb-server
+RUN apt-get install -y mongodb-server
 
 RUN mkdir -p /data/db
 

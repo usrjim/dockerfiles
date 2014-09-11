@@ -1,11 +1,7 @@
-FROM debian:jessie
+FROM usrjim
 MAINTAINER Jim Cheung <usr.jim@gmail.com>
 
-RUN apt-get update
-RUN apt-get install -y vim-tiny nginx
-
-RUN echo "Asia/Hong_Kong" > /etc/timezone
-RUN dpkg-reconfigure -f noninteractive tzdata
+RUN apt-get install -y nginx
 
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
 
