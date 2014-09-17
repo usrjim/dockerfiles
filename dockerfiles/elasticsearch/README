@@ -1,0 +1,6 @@
+build `jdk7` image first:
+
+1. `cd jdk7`
+2. `docker build -t usrjim/jdk7 .`
+
+
