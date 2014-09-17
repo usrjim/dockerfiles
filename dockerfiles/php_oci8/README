@@ -1,0 +1,8 @@
+# oracle instant client
+
+download from: [www.oracle.com/technetwork/database/features/instant-client](http://www.oracle.com/technetwork/database/features/instant-client)
+
+in `Dockerfile`, hard coded with these two:
+
+- instantclient-sdk-linux.x64-12.1.0.2.0.zip
+- instantclient-basiclite-linux.x64-12.1.0.2.0.zip
