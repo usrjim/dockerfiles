@@ -3,7 +3,7 @@ MAINTAINER Jim Cheung <usr.jim@gmail.com>
 
 RUN apt-get install -y nginx
 
-RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 VOLUME ["/etc/nginx/sites-enabled", "/var/log/nginx"]
 
