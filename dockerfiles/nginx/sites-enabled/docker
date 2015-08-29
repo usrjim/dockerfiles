@@ -5,3 +5,13 @@ server {
         proxy_pass http://172.17.42.1:8080;
     }
 }
+server {
+    listen 443 ssl;
+    server_name localhost;
+    ssl_certificate /etc/nginx/ssl/nginx.crt;
+    ssl_certificate_key /etc/nginx/ssl/nginx.key;
+    location / {
+        proxy_pass http://172.17.42.1:8090;
+    }
+}
+
