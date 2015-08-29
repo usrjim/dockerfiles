@@ -1,7 +1,7 @@
 FROM usrjim
 MAINTAINER Jim Cheung <usr.jim@gmail.com>
 
-RUN apt-get install -y nodejs npm
+RUN apt-get install -y nodejs
 
 VOLUME ["/www"]
 
