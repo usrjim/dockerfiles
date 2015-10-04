@@ -1,7 +1,7 @@
 FROM usrjim
 MAINTAINER Jim Cheung <usr.jim@gmail.com>
 
-RUN apt-get install -y nginx
+RUN apt-get install -y nginx-full
 
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
